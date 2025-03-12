@@ -1,0 +1,15 @@
+1;Normal;24livroF,25oculosF,;Normal;41.1720859;-8.6148178;Portugal;
+2;Normal;27brinquedoF,28camisolaF,;Normal;41.1605747;-8.5855818;Portugal;
+3;Normal;30florF,31areiaF,;Hard;41.1666825;-8.6751895;Portugal;
+5;Premium;;Hard;41.1492281;-8.6120275;Portugal;
+6;Normal;;Normal;41.1504982;-8.6654695;Portugal;
+7;Normal;33bilhetes_aviao_centroF,;Normal;41.2421226;-8.6807401;Portugal;
+9;Normal;;Normal;40.2027321;-8.4333746;Portugal;
+10;Premium;36borrachaF,37chavesF,;Normal;40.188891;-8.410378;Portugal;
+11;Normal;38ovos_molesF,;Normal;40.6394116;-8.6621375;Portugal;
+12;Normal;39espada_sulF,29pedraT,;Normal;40.6597787;-7.9136921;Portugal;
+13;Normal;;Normal;38.6942546;-9.2129457;Portugal;
+14;Normal;;Normal;38.7288464;-9.1481854;Portugal;
+15;Normal;40bilhetes_aviaoF,23canudoT,;Normal;38.7756417;-9.1325313;Portugal;
+16;Premium;;Normal;38.7527152;-9.1869627;Portugal;
+17;Normal;26bolaT,;Normal;38.7612341;-9.1639843;Portugal;

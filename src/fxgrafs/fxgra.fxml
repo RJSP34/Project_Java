@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="508.0" prefWidth="674.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxgrafs.Btcontroler">
+   <children>
+      <AnchorPane layoutY="23.0" prefHeight="335.0" prefWidth="541.0">
+         <children>
+            <MenuBar prefHeight="23.0" prefWidth="614.0">
+               <menus>
+                  <Menu mnemonicParsing="false" text="File">
+                     <items>
+                        <Menu mnemonicParsing="false" text="Open">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleReadFileAction" text="Open Text File" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleReadBinFileAction" text="Open Bin File" />
+                           </items>
+                        </Menu>
+                        <Menu mnemonicParsing="false" text="Save">
+                           <items>
+                              <MenuItem mnemonicParsing="false" onAction="#handleSaveFileAction" text="Save Text File" />
+                              <MenuItem mnemonicParsing="false" onAction="#handleSaveBinFileAction" text="Save Bin File" />
+                           </items>
+                        </Menu>
+                        <MenuItem mnemonicParsing="false" onAction="#handleExitAction" text="Exit" />
+                     </items>
+                  </Menu>
+                  <Menu mnemonicParsing="false" text="Help">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="About" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+            <TabPane layoutX="8.0" layoutY="23.0" prefHeight="429.0" prefWidth="579.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="GeoCaches">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="246.0" prefWidth="424.0">
+                           <children>
+                              <VBox prefHeight="339.0" prefWidth="587.0">
+                                 <children>
+                                    <TableView fx:id="GeoCacheTable" editable="true" prefHeight="253.0" prefWidth="600.0">
+                                       <columns>
+                                          <TableColumn fx:id="IdCol" onEditCommit="#handleEditIDAction" prefWidth="123.0" text="id" />
+                                          <TableColumn fx:id="TypeCol" onEditCommit="#handleEditTypeAction" prefWidth="134.0" text="type" />
+                                          <TableColumn fx:id="LatCol" onEditCommit="#handleEditLatAction" prefWidth="140.0" text="latitude" />
+                                          <TableColumn fx:id="LonCol" onEditCommit="#handleEditLONGAction" prefWidth="128.0" text="longitude" />
+                                          <TableColumn fx:id="RegionCol" onEditCommit="#handleEditRegionAction" prefWidth="204.0" text="regiao" />
+                                       </columns>
+                                    </TableView>
+                                    <HBox prefHeight="98.0" prefWidth="600.0" spacing="5.0">
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                       <padding>
+                                          <Insets left="5.0" top="5.0" />
+                                       </padding>
+                                       <children>
+                                          <TextField fx:id="IDField" prefHeight="27.0" prefWidth="122.0" promptText="ID">
+                                             <effect>
+                                                <Reflection />
+                                             </effect></TextField>
+                                          <TextField fx:id="TypeField" prefHeight="27.0" prefWidth="112.0" promptText="Type" />
+                                          <TextField fx:id="LatField" prefHeight="27.0" prefWidth="125.0" promptText="Lat" />
+                                          <TextField fx:id="LongField" prefHeight="27.0" prefWidth="146.0" promptText="Long" />
+                                          <TextField fx:id="RegiaoField1" prefHeight="27.0" prefWidth="146.0" promptText="Regiao" />
+                                          <Button mnemonicParsing="false" onAction="#handleAddGEOCACHEAction" text="Add">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                              <Button layoutX="472.0" layoutY="326.0" mnemonicParsing="false" onAction="#handleEdgesButtonAction" prefHeight="26.0" prefWidth="115.0" text="Generate" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab text="Graph">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Group fx:id="graphGroup" layoutX="14.0" layoutY="14.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

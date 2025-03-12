@@ -1,0 +1,6 @@
+1;Manuel;Std;0;3SpatosF,4kancF,5janmdF,6hamendF,;;1244.1223;32221.233;Spain;
+2;Pedro;Std;0;7SpatosF,8kancF,9janmdF,10hamendF,;;-1222.1113;3131.133;China;
+3;Fernando;Admin;0;11SpatosF,12kancF,13janmdF,14hamendF,;;-15444.3133;3551.133;Han;;
+4;Joana;Std;0;;;-15444.3133;3551.133;Han;
+5;Maria;Premium;0;;;-15444.3133;3551.133;Han;;
+6;Filomena;Admin;0;;;-15444.3133;3551.133;Han;;

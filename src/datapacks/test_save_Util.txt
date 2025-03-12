@@ -1,0 +1,6 @@
+0;Name;Std;0;1llF,2llF,;;12345.222;21123.33;Reg;
+1;Manuel;Std;6;3SpatosF,4kancF,5janmdF,6hamendF,;1,2,6,13,17,;1244.1223;32221.233;Spain;
+4;Joana;Std;5;;14,15,17,13,;-15444.3133;3551.133;Han;
+3;Fernando;Admin;16;11SpatosF,12kancF,13janmdF,14hamendF,;12,11,10,9,5,6,3,2,1,7,15,17,13,;-15444.3133;3551.133;Han;;
+6;Filomena;Admin;8;;5,6,7,3,2,1,13,;-15444.3133;3551.133;Han;;
+5;Maria;Premium;7;;3,9,10,16,11,12,;-15444.3133;3551.133;Han;;
